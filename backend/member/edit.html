@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bootstrap cdn css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- bootstrap cdn icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-8 mx-auto">
+                <h1 class=" text-center">
+                    PTCG news2.0<br>會員資料修改
+                </h1>
+                <div class="shadow p-5 rounded-3 bg-white">
+                    <form action="dashboard.html" class="needs-validation" novalidate>
+                        <!-- 會員等級 start -->
+                        <label class="form-check-label d-block">
+                            會員等級
+                        </label>
+                        <div class="from-check form-check-inline mb-3">
+                            <input type="radio" name="rank" id="normal" class="form-check-input">
+                            <label class="form-check-label" for="normal">
+                                一般會員
+                            </label>
+                        </div>
+                        <div class="from-check form-check-inline">
+                            <input type="radio" name="rank" id="vip" class="form-check-input">
+                            <label class="form-check-label" for="vipl">
+                                高級會員
+                            </label>
+                        </div>
+                        <!-- 會員等級 end -->
+
+                        <!-- 姓名 start -->
+                        <div class="mb-3">
+                            <label for="user_name" class="form-label">姓名</label>
+                            <input type="text" class="form-control" id="user_name" name="user_name" placeholder="請輸入姓名"
+                                required>
+                            <div class="invalid-feedback">
+                                此欄位不可空白
+                            </div>
+                        </div>
+                        <!-- 姓名 end -->
+
+                        <!-- 手機號碼 start -->
+                        <div class="mb-3">
+                            <label for="phone_number" class="form-label">手機號碼</label>
+                            <input type="text" class="form-control" id="phone_number" name="phone_number"
+                                placeholder="格式為 0900-000000" pattern="[0-9]{4}-[0-9]{6}" required>
+                            <div class="invalid-feedback">
+                                此欄位不可空白
+                            </div>
+                        </div>
+                        <!-- 手機號碼 end -->
+
+                        <!-- 電子郵件 start -->
+                        <div class="mb-3">
+                            <label for="email" class="form-label">電子郵件</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="請輸入電子郵件"
+                                required>
+                            <div class="invalid-feedback">
+                                此欄位不可空白
+                            </div>
+                        </div>
+                        <!-- 電子郵件 end -->
+
+                        <!-- 生日 start -->
+                        <div class="mb-3">
+                            <label for="birthday" class="form-label">生日</label>
+                            <input type="date" class="form-control" id="birthday" name="birthday" placeholder="請輸入生日"
+                                required>
+                            <div class="invalid-feedback">
+                                此欄位不可空白
+                            </div>
+                        </div>
+                        <!-- 生日 end -->
+
+                        <!-- 職業 start -->
+                        <div class="mb-3">
+                            <label for="job" class="form-label">職業</label>
+                            <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                                <option selected>===請選擇=== </option>
+                                <option value="1">醫療業</option>
+                                <option value="2">金融業</option>
+                                <option value="3">教育業</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                此欄位不可空白
+                            </div>
+                        </div>
+                        <!-- 職業 end -->
+
+
+                        <!-- 送出 start -->
+                        <input class="btn btn-outline-primary" type="submit" value="送出">
+                        <!-- 送出 end -->
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- bootstarp cdn js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+        </script>
+    <script src="../../js/validation.js"></script>
+</body>
+
+</html>
