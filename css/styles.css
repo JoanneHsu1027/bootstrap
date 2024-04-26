@@ -12101,19 +12101,13 @@ fieldset:disabled .btn {
 
 /*# sourceMappingURL=styles.css.map */
 
+
 /* 自訂義 */
-.navbar-nav .nav-item .nav-link:hover {
-  color: #000;
-  /* 更改文字顏色 */
-  background-color: #f8f9fa;
-  /* 更改背景顏色 */
-  height: 100%;
 
-}
-
-.navbar-nav .nav-item:not(:hover) .nav-link {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-top: -15px;
-  padding-bottom: -15px;
-}
+/* .container,
+.container-fluid,
+.container-xxl,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm  */
