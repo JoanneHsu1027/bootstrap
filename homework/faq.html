@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>常見判例 | PTCG整合網</title>
     <!-- bootstrap cdn css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
@@ -30,10 +30,10 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href=",/index.html">首頁</a>
+                            <a class="nav-link" aria-current="page" href="./index.html">首頁</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./about.html">關於我們</a>
+                            <a class="nav-link" href="./about.html">新手指南</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./crteater.html">創作者資訊</a>
@@ -62,15 +62,399 @@
         </nav>
         <!-- navbar end -->
 
+        <!-- modal start -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">登入</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="#" class="needs-validation" novalidate>
+                            <!-- 帳號 start -->
+                            <div class="mb-3">
+                                <label for="account" class="form-label">帳號</label>
+                                <input type="text" id="account" name="account" class="form-control" placeholder="請輸入帳號"
+                                    required>
+                                <div class="invalid-feedback">
+                                    此為必填欄位
+                                </div>
+                            </div>
+
+                            <!-- 帳號 end -->
+
+                            <!-- 密碼 start -->
+                            <div class="mb-3">
+                                <label for="password" class="form-label">密碼</label>
+                                <input type="password" id="password" name="password" class="form-control"
+                                    placeholder="請輸入密碼" required>
+                                <div class="invalid-feedback">
+                                    此為必填欄位
+                                </div>
+                            </div>
+                            <!-- 密碼 end -->
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="check" required>
+                                <label class="form-check-label" for="check">記住我</label>
+                            </div>
+                            <!-- 送出 start -->
+                            <div class="text-end">
+                                <input class="btn btn-primary" type="submit" value="登入">
+                            </div>
+                            <!-- 送出 end -->
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- modal end -->
+
         <!-- 麵包屑 start -->
-        <nav aria-label="breadcrumb" class="m-3 my-7">
+        <nav aria-label="breadcrumb" class="px-3 py-3 my-6 mx-4">
             <ol class="breadcrumb  mb-0">
                 <li class="breadcrumb-item"><a href="./index.html">首頁</a></li>
                 <li class="breadcrumb-item active" aria-current="page">常見問題</li>
             </ol>
         </nav>
-        <!-- 麵包屑 start -->
+        <!-- 麵包屑 end -->
+
+        <!-- 手風琴 start -->
+        <div class="container">
+            <div class="row">
+                <h2 class="col-12 text-center mb-5">常見問題</h2>
+
+                <ul class="nav nav-pills justify-content-center mb-5" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="rounded-pill nav-link active" id="home-tab" data-bs-toggle="tab"
+                            data-bs-target="#home" type="button" role="tab" aria-controls="home"
+                            aria-selected="true">寶可夢狀態</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="rounded-pill nav-link" id="profile-tab" data-bs-toggle="tab"
+                            data-bs-target="#profile" type="button" role="tab" aria-controls="profile"
+                            aria-selected="false">標準環境</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="rounded-pill nav-link" id="contact-tab" data-bs-toggle="tab"
+                            data-bs-target="#contact" type="button" role="tab" aria-controls="contact"
+                            aria-selected="false">開放環境</button>
+                    </li>
+                </ul>
+
+                <div class="tab-content" id="myTabContent">
+                    <!-- home start -->
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="accordion" id="accordionExample">
+                            <!-- 問題1 start -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <i class="bi bi-patch-question-fill me-2 text-primary"></i>
+                                        什麼是寶可夢檢查？
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        指的是檢查寶可夢狀態的步驟。在自己的回合結束時與對手的回合結束時，雙方針對處於特殊狀態的寶可夢，檢查該效果是否持續。
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 問題1 end -->
+                            <!-- 問題2 start -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        <i class="bi bi-patch-question-fill me-2 text-primary"></i>
+                                        什麼是麻痺？
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        指的是寶可夢因對手的招式等，處於叫做「麻痺」的特殊狀態。麻痺的寶可夢需要將卡牌橫置作為標記。麻痺的寶可夢無法使出招式，也無法撤退。「麻痺」在自己的回合結束時，在寶可夢檢查後可恢復。從「麻痺」狀態恢復也可使用以下方法。進化、使用例如「萬靈藥」的物品卡
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 問題2 end -->
+                            <!-- 問題3 start -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        <i class="bi bi-patch-question-fill me-2 text-primary"></i>
+                                        什麼是灼傷？
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        指的是寶可夢因對手的招式等，處於叫做「灼傷」的特殊狀態。灼傷的寶可夢需要放置灼傷標記作為標記。灼傷的寶可夢，在每次寶可夢檢查時，需要放置20點傷害指示物。之後，由灼傷的寶可夢的持有人擲硬幣，若為正面則恢復。若為反面，則保持灼傷狀態。即使處於灼傷狀態，也可以使用招式或撤退。灼傷與其他特殊狀態可重複
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 問題3 end -->
+                            <!-- 問題4 start -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFour" aria-expanded="false"
+                                        aria-controls="collapseFour">
+                                        <i class="bi bi-patch-question-fill me-2 text-primary"></i>
+                                        什麼是睡眠？
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        指的是寶可夢因對手的招式等，處於叫做「睡眠」的特殊狀態。睡眠的寶可夢需要將卡牌橫置作為標記。睡眠的寶可夢無法使出招式，也無法撤退。處於睡眠狀態後，在每次寶可夢檢查時擲硬幣，若為正面，則恢復。從「睡眠」狀態恢復也可使用以下方法。進化
+                                        、使用例如「萬靈藥」的物品卡
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 問題4 end -->
+                            <!-- 問題5 start -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFive">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFive" aria-expanded="false"
+                                        aria-controls="collapseFive">
+                                        <i class="bi bi-patch-question-fill me-2 text-primary"></i>
+                                        什麼是中毒？
+                                    </button>
+                                </h2>
+                                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        指的是寶可夢因對手的招式等，處於叫做「中毒」的特殊狀態。中毒的寶可夢需要放置「中毒標記」作為標記。中毒的寶可夢在每次寶可夢檢查時，要放置1個「10」的傷害指示物。從「中毒」狀態恢復可使用以下方法。撤退至備戰區、進化
+                                        、使用例如「萬靈藥」的物品卡
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 問題5 end -->
+                        </div>
+                    </div>
+
+                    <!-- home end -->
+
+                    <!-- 2 start -->
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <div class="accordion" id="accordionExample">
+                                <!-- 問題1 start -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading6">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            <i class="bi bi-patch-question-fill me-2 text-primary"></i>
+                                            自己的手牌只有1張支援者卡「奇樹」，對手的手牌有1張以上的卡。此時，若使用支援者卡「奇樹」，自己沒有可以放回牌庫下方的卡牌，那麼自己可以從牌庫抽出與自己的獎賞卡張數相同的卡嗎？
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="heading6"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            可以。
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 問題1 end -->
+                                <!-- 問題2 start -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading7">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                            <i class="bi bi-patch-question-fill me-2 text-primary"></i>
+                                            在上一個對手的回合，對手的詛咒娃娃ex使用了招式「無盡黑暗」。在下一個自己的回合，若受到招式「無盡黑暗」的寶可夢回到了備戰區，自己可以使用物品卡嗎？
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="heading7"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            不可以。招式「無盡黑暗」的效果為對玩家生效的效果，這個情況下，自己無法從手牌使出物品卡使用
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 問題2 end -->
+                                <!-- 問題3 start -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading8">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            <i class="bi bi-patch-question-fill me-2 text-primary"></i>
+                                            雙方的剩餘獎賞卡為1張時，剩餘HP為90的三合一磁怪使用招式「大爆炸」將對手的戰鬥寶可夢昏厥了。這個情況下，勝敗將如何決定？
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse"
+                                        aria-labelledby="heading8" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            可以從備戰區放置寶可夢至戰鬥場上的玩家獲勝。若雙方皆可以放置，或雙方皆不可放置，則為平手。
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 問題3 end -->
+                                <!-- 問題4 start -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading9">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                            aria-expanded="false" aria-controls="collapseFour">
+                                            <i class="bi bi-patch-question-fill me-2 text-primary"></i>
+                                            雙方的戰鬥場上都有鑰圈兒時，會怎麼樣？
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFour" class="accordion-collapse collapse"
+                                        aria-labelledby="heading9" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            雙方的鑰圈兒以外的基礎寶可夢的特性會消除。
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 問題4 end -->
+                                <!-- 問題5 start -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading10">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseFive"
+                                            aria-expanded="false" aria-controls="collapseFive">
+                                            <i class="bi bi-patch-question-fill me-2 text-primary"></i>
+                                            使用「派帕」時，即使牌庫中有對象卡牌，也可以選擇不加入手牌中嗎？
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFive" class="accordion-collapse collapse"
+                                        aria-labelledby="heading10" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            可以。從牌庫選擇卡牌時，可以1張卡牌都不選擇，直接結束效果處理。即使不選擇並結束效果處理，也需要重洗牌庫。
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 問題5 end -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 2 end -->
+                    <!-- 3 start -->
+                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <div class="accordion" id="accordionExample">
+                                <!-- 問題1 start -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading1">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            <i class="bi bi-patch-question-fill me-2 text-primary"></i>
+                                            剛放置於場上的粉蝶蟲因特性「適應進化」的效果，從手牌將其進化為了粉蝶蛹。在同一個回合中，可以使用支援者卡「寶可夢培育家的育成」，將特性「適應進化」的效果處於有效狀態的粉蝶蛹，從牌庫將其進化為彩粉蝶嗎？
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="heading1"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            不可以。
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 問題1 end -->
+                                <!-- 問題2 start -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading2">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                            <i class="bi bi-patch-question-fill me-2 text-primary"></i>
+                                            對手的戰鬥場上有特性「陷阱地盤」處於有效狀態的操陷蛛ex時，自己的附有「潛行惡能量」的寶可夢撤退所需的能量會消除嗎？
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="heading2"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            會消除。
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 問題2 end -->
+                                <!-- 問題3 start -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading3">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            <i class="bi bi-patch-question-fill me-2 text-primary"></i>
+                                            對手的戰鬥寶可夢因夢夢蝕的招式「熟睡波動」的效果處於擲2次硬幣的睡眠狀態時，可以因彩粉蝶的招式「奇跡粉」的效果，選擇睡眠嗎？
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse"
+                                        aria-labelledby="heading3" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            可以。這個情況下，對手的戰鬥寶可夢將變為擲1次硬幣的睡眠。
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 問題3 end -->
+                                <!-- 問題4 start -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading4">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                            aria-expanded="false" aria-controls="collapseFour">
+                                            <i class="bi bi-patch-question-fill me-2 text-primary"></i>
+                                            使用巴布土撥的特性「起電」時，可以選擇牌庫中的1張「高速雷能量」，附給巴布土撥嗎？
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFour" class="accordion-collapse collapse"
+                                        aria-labelledby="heading4" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            不可以
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 問題4 end -->
+                                <!-- 問題5 start -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading5">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseFive"
+                                            aria-expanded="false" aria-controls="collapseFive">
+                                            <i class="bi bi-patch-question-fill me-2 text-primary"></i>
+                                            使用風速狗ex的招式「紅蓮火焰」時，可以選擇丟棄風速狗ex身上附加的「極光能量」和「夜光能量」各1張嗎？
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFive" class="accordion-collapse collapse"
+                                        aria-labelledby="heading5" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            不可以。
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 問題5 end -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 3 end -->
+                </div>
+            </div>
+        </div>
+        <!-- 手風琴 end -->
+
     </main>
+
+    <!-- footer -->
+    <footer class="footer mt-auto py-3 bg-primary text-center text-white">Copyright © 2024 Pokémon images appearing on
+        this website are the property of The Pokémon Company International, Inc.
+    </footer>
+    <!-- footer -->
+
+    <!-- bootstarp cdn js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+        </script>
 </body>
 
 </html>

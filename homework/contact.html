@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PTCG整合網</title>
+    <title>聯絡我們 | PTCG整合網</title>
     <!-- bootstrap cdn css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
@@ -16,6 +16,7 @@
 
 <body class="d-flex flex-column h-100">
     <main class="flex-shrink-0" style="background-color: white;">
+
         <!-- navbar start -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
             <div class="container-fluid">
@@ -30,7 +31,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">首頁</a>
+                            <a class="nav-link" aria-current="page" href="./index.html">首頁</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./about.html">新手指南</a>
@@ -48,7 +49,7 @@
                             <a class="nav-link" href="./faq.html">常見問題</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./contact.html">聯絡我們</a>
+                            <a class="nav-link active" href="./contact.html">聯絡我們</a>
                         </li>
                     </ul>
                     <form class="d-flex">
@@ -111,95 +112,83 @@
         </div>
         <!-- modal end -->
 
-        <!-- 最新資訊 start -->
-        <div id="carouselExampleIndicators" class="carousel slide mt-4 pt-4" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="../imgs/card240510.png" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="../imgs/pokemon_championships2023-24.png" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="../imgs/card240403.png" class="d-block w-100" alt="...">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-        <!-- 最新資訊 end -->
+        <!-- 麵包屑 start -->
+        <nav aria-label="breadcrumb" class="px-3 py-3 my-6 mx-4">
+            <ol class="breadcrumb  mb-0">
+                <li class="breadcrumb-item"><a href="./index.html">首頁</a></li>
+                <li class="breadcrumb-item active" aria-current="page">聯絡我們</li>
+            </ol>
+        </nav>
+        <!-- 麵包屑 end -->
 
-        <!-- 最新影片 start -->
-        <div class="py-5">
-            <div class="container">
-                <h2 class="text-center mt-4 mb-5">
-                    最新影片
-                </h2>
-                <div class="row">
-                    <div class="col-12 col-md-6">
-                        <div class="">
-                            <a href="./storelist.html">
-                                <img src="../imgs/storejpg.jpg" alt="" class="w-100">
-                            </a>
-                        </div>
-                        <p class="text-center pt-3">道館賽店家</p>
-                    </div>
-                    <div class="col-12 col-md-6">
-                        <div class="">
-                            <a href="./crtater.html">
-                                <img src="../imgs/storejpg.jpg" alt="" class="w-100">
-                            </a>
-                        </div>
-                        <p class="text-center pt-3">創作者資訊</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- 最新影片 end -->
+        <!-- 聯絡表單 start -->
+        <div class="container login">
+            <div class="row my-5">
+                <div class="col-6 mx-auto">
+                    <div class="">
+                        <form action="dashboard.html" class="needs-validation" novalidate>
+                            <h2 class="text-center pb-4">聯絡我們</h2>
+                            <!-- name start -->
+                            <div class="mb-3">
+                                <label for="name" class="form-label">姓名</label>
+                                <input type="text" id="name" name="name" placeholder="請輸入姓名" class="form-control"
+                                    required>
+                                <div class="invalid-feedback">
+                                    請輸入正確姓名
+                                </div>
+                            </div>
+                            <!-- name end -->
 
-        <!-- 最新賽事 start-->
-        <div class="py-5">
-            <div class="container">
-                <div class="row mt-2 pt-2 mb-1 pb-1">
-                    <h2 class="text-center mt-4 mb-5">最新賽事</h2>
-                    <div class="col-12 col-xl-4">
-                        <div class="position-relative">
-                            <img src="../imgs/CL.jpg" alt="" class="w-100 rounded">
-                            <div class="bg-icon text-white position-absolute start-0 bottom-0 p-2">台灣冠軍賽</div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-xl-4">
-                        <div class="position-relative">
-                            <img src="../imgs/RL.jpg" alt="" class="w-100 rounded">
-                            <div class="bg-icon text-white position-absolute start-0 bottom-0 p-2">地區聯盟賽</div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-xl-4">
-                        <div class="position-relative">
-                            <img src="../imgs/TL.jpg" alt="" class="w-100 rounded">
-                            <div class="bg-icon text-white position-absolute start-0 bottom-0 p-2">城市聯盟賽</div>
-                        </div>
+                            <!-- 電話 start -->
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">手機號碼</label>
+                                <input type="tel" id="phone" name="phone" placeholder="請輸入手機號碼" class="form-control"
+                                    pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" required>
+                                <div class="invalid-feedback">
+                                    請輸入正確手機號碼
+                                </div>
+                            </div>
+                            <!-- 電話 end -->
+
+                            <!-- 信箱 start -->
+                            <div class="mb-3">
+                                <label for="email" class="form-label">E-mail</label>
+                                <input type="email" id="email" name="email" placeholder="請輸入E-mail" class="form-control"
+                                    required>
+                                <div class="invalid-feedback">
+                                    請輸入正確E-mail
+                                </div>
+                            </div>
+                            <!-- 信箱 end -->
+
+                            <!-- 主旨 start -->
+                            <div class="mb-3">
+                                <label for="title" class="form-label">主旨</label>
+                                <input type="text" id="title" name="title" placeholder="請輸入主旨" class="form-control"
+                                    required>
+                                <div class="invalid-feedback">
+                                    請輸入主旨
+                                </div>
+                            </div>
+                            <!-- 主旨 end -->
+
+                            <!-- 內容 start -->
+                            <div class="mb-3">
+                                <label for="textarea" class="form-label">內容</label>
+                                <textarea class="form-control" id="textarea" rows="5"></textarea>
+                            </div>
+                            <!-- 內容 end -->
+                            <!-- submit start -->
+                            <div class="text-end mb-2">
+                                <input class="btn btn-secondary" type="submit" value="送出">
+                            </div>
+                            <!-- submit end -->
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- 最新賽事 end-->
+        <!-- 聯絡表單 end -->
 
         <!-- 底部點擊箭頭 -->
         <div>
@@ -207,6 +196,7 @@
                     class="bi bi-arrow-up-circle-fill"></i></a>
         </div>
         <!-- 底部點擊箭頭 -->
+
     </main>
 
     <!-- footer -->
