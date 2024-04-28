@@ -17,6 +17,301 @@
 <body class="d-flex flex-column h-100">
     <main class="flex-shrink-0" style="background-color: white;">
 
+        <!-- navbar start -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href=""><img src="" alt="">
+                    <img src="../imgs/Pokemon-Logo.png" alt="" height="50">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./index.html">首頁</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./about.html">新手指南</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./crteater.html">創作者資訊</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./storelist.html">道館賽店家</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./product.html">卡牌相關產品</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./faq.html">常見問題</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">聯絡我們</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <a href="javascript:;" class="fs-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <i class="bi bi-person-fill" style="color: white;"></i>
+                        </a>
+
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- navbar end -->
+
+        <!-- modal start -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">登入</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="#" class="needs-validation" novalidate>
+                            <!-- 帳號 start -->
+                            <div class="mb-3">
+                                <label for="account" class="form-label">帳號</label>
+                                <input type="text" id="account" name="account" class="form-control" placeholder="請輸入帳號"
+                                    required>
+                                <div class="invalid-feedback">
+                                    此為必填欄位
+                                </div>
+                            </div>
+
+                            <!-- 帳號 end -->
+
+                            <!-- 密碼 start -->
+                            <div class="mb-3">
+                                <label for="password" class="form-label">密碼</label>
+                                <input type="password" id="password" name="password" class="form-control"
+                                    placeholder="請輸入密碼" required>
+                                <div class="invalid-feedback">
+                                    此為必填欄位
+                                </div>
+                            </div>
+                            <!-- 密碼 end -->
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="check" required>
+                                <label class="form-check-label" for="check">記住我</label>
+                            </div>
+                            <!-- 送出 start -->
+                            <div class="text-end">
+                                <input class="btn btn-primary" type="submit" value="登入">
+                            </div>
+                            <!-- 送出 end -->
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- modal end -->
+
+        <!-- 麵包屑 start -->
+        <nav aria-label="breadcrumb" class="px-3 py-3 my-6 mx-4">
+            <ol class="breadcrumb  mb-0">
+                <li class="breadcrumb-item"><a href="./index.html">首頁</a></li>
+                <li class="breadcrumb-item active" aria-current="page">卡牌相關產品</li>
+            </ol>
+        </nav>
+        <!-- 麵包屑 end -->
+
+        <!-- 內容 start -->
+        <div class="container mt-3">
+            <div class="row">
+                <!-- 左邊欄 start -->
+                <div class="col-md-2">
+                    <h2 class="mt-4 mb-4 mx-3 fs-5 fw-bold ms-0">線上購物</h2>
+                    <ul id="about-list" style="display: block;" class="px-0">
+                        <li class="list-unstyled py-2"><a href="javascript:;"
+                                class="text-muted text-decoration-none">所有產品</a></li>
+                        <li class="list-unstyled py-2"><a href="javascript:;"
+                                class="text-muted text-decoration-none">卡包</a></li>
+                        <li class="list-unstyled py-2"><a href="javascript:;"
+                                class="text-muted text-decoration-none">卡盒</a></li>
+                        <li class="list-unstyled py-2"><a href="javascript:;"
+                                class="text-muted text-decoration-none">卡套</a></li>
+                        <li class="list-unstyled py-2"><a href="javascript:;"
+                                class="text-muted text-decoration-none">卡墊</a></li>
+                        <li class="list-unstyled py-2"><a href="javascript:;"
+                                class="text-muted text-decoration-none">指示物</a></li>
+                        <li class="list-unstyled py-2"><a href="javascript:;"
+                                class="text-muted text-decoration-none">卡磚</a></li>
+                    </ul>
+                </div>
+                <!-- 左邊欄 end -->
+                <!-- 右邊欄 start -->
+                <div class="col-md-10">
+                    <!-- 輪播 start -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="../imgs/card240510拷貝.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../imgs/card240403拷貝.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../imgs/card240202拷貝.png" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 輪播 end -->
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-xl-3">
+                            <a class="text-muted text-decoration-none" href="javascript:;"><img class="img-fluid w-100"
+                                    src="../imgs/SV6.png" alt="">
+                                <p class="mt-1 mb-0">擴充包「變幻假面」
+                                </p>
+                                <p class="text-muted mt-0">NT.1470</p>
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-6 col-xl-3">
+                            <a class="text-muted text-decoration-none" href="javascript:;"><img class="img-fluid w-100"
+                                    src="../imgs/SV5a.png" alt="">
+                                <p class="mt-1 mb-0">強化擴充包「緋紅薄霧」
+                                </p>
+                                <p class="text-muted mt-0">NT.1470</p>
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-6 col-xl-3">
+                            <a class="text-muted text-decoration-none" href="javascript:;"><img class="img-fluid w-100"
+                                    src="../imgs/SV5m.png" alt="">
+                                <p class="mt-1 mb-0">擴充包「異度審判」
+                                </p>
+                                <p class="text-muted mt-0">NT.1470</p>
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-6 col-xl-3">
+                            <a class="text-muted text-decoration-none" href="javascript:;"><img class="img-fluid w-100"
+                                    src="../imgs/SV5k.png" alt="">
+                                <p class="mt-1 mb-0">擴充包「狂野之力」
+                                </p>
+                                <p class="text-muted mt-0">NT.147</p>
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-6 col-xl-3">
+                            <a class="text-muted text-decoration-none" href="javascript:;"><img class="img-fluid w-100"
+                                    src="../imgs/烏栗姊弟卡套.jpeg" alt="">
+                                <p class="mt-1 mb-0">造型卡套 丹瑜＆烏栗
+                                </p>
+                                <p class="text-muted mt-0">NT.250</p>
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-6 col-xl-3">
+                            <a class="text-muted text-decoration-none" href="javascript:;"><img class="img-fluid w-100"
+                                    src="../imgs/皮卡丘＆新葉喵卡套.jpeg" alt="">
+                                <p class="mt-1 mb-0">造型卡套 皮卡丘＆新葉喵
+                                </p>
+                                <p class="text-muted mt-0">NT.250</p>
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-6 col-xl-3">
+                            <a class="text-muted text-decoration-none" href="javascript:;"><img class="img-fluid w-100"
+                                    src="../imgs/沙儷卡套.jpeg" alt="">
+                                <p class="mt-1 mb-0">造型卡套 沙儷
+                                </p>
+                                <p class="text-muted mt-0">NT.250</p>
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-6 col-xl-3">
+                            <a class="text-muted text-decoration-none" href="javascript:;"><img class="img-fluid w-100"
+                                    src="../imgs/水蓮卡套.jpeg" alt="">
+                                <p class="mt-1 mb-0">造型卡套 水蓮
+                                </p>
+                                <p class="text-muted mt-0">NT.250</p>
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-6 col-xl-3">
+                            <a class="text-muted text-decoration-none" href="javascript:;"><img class="img-fluid w-100"
+                                    src="../imgs/水蓮卡套.jpeg" alt="">
+                                <p class="mt-1 mb-0">卡牌收納盒 丹瑜＆烏栗
+                                </p>
+                                <p class="text-muted mt-0">NT.150</p>
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-6 col-xl-3">
+                            <a class="text-muted text-decoration-none" href="javascript:;"><img class="img-fluid w-100"
+                                    src="../imgs/色違巨鍛將卡盒.jpeg" alt="">
+                                <p class="mt-1 mb-0">卡牌收納盒 色違巨鍛匠
+                                </p>
+                                <p class="text-muted mt-0">NT.150</p>
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-6 col-xl-3">
+                            <a class="text-muted text-decoration-none" href="javascript:;"><img class="img-fluid w-100"
+                                    src="../imgs/火紅不倒翁＆燭光靈＆綿綿泡芙卡盒.jpeg" alt="">
+                                <p class="mt-1 mb-0">卡牌收納盒 火紅不倒翁＆燭光靈＆綿綿泡芙
+                                </p>
+                                <p class="text-muted mt-0">NT.150</p>
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-6 col-xl-3">
+                            <a class="text-muted text-decoration-none" href="javascript:;"><img class="img-fluid w-100"
+                                    src="../imgs/白露卡盒.jpeg" alt="">
+                                <p class="mt-1 mb-0">卡牌收納盒 白露
+                                </p>
+                                <p class="text-muted mt-0">NT.150</p>
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-6 col-xl-3">
+                            <a class="text-muted text-decoration-none" href="javascript:;"><img class="img-fluid w-100"
+                                    src="../imgs/烏栗姊弟卡墊.jpeg" alt="">
+                                <p class="mt-1 mb-0">橡膠對戰桌墊 丹瑜＆烏栗
+                                </p>
+                                <p class="text-muted mt-0">NT.1050</p>
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-6 col-xl-3">
+                            <a class="text-muted text-decoration-none" href="javascript:;"><img class="img-fluid w-100"
+                                    src="../imgs/一家鼠卡墊.jpeg" alt="">
+                                <p class="mt-1 mb-0">橡膠對戰桌墊 一家鼠
+                                </p>
+                                <p class="text-muted mt-0">NT.1050</p>
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-6 col-xl-3">
+                            <a class="text-muted text-decoration-none" href="javascript:;"><img class="img-fluid w-100"
+                                    src="../imgs/水太晶烈咬陸鯊卡套.jpeg" alt="">
+                                <p class="mt-1 mb-0">橡膠對戰桌墊 水太晶烈咬陸鯊
+                                </p>
+                                <p class="text-muted mt-0">NT.1050</p>
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-6 col-xl-3">
+                            <a class="text-muted text-decoration-none" href="javascript:;"><img class="img-fluid w-100"
+                                    src="../imgs/塗標客卡墊.jpeg" alt="">
+                                <p class="mt-1 mb-0">橡膠對戰桌墊 塗標客
+                                </p>
+                                <p class="text-muted mt-0">NT.1050</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 右邊欄 end -->
+            </div>
+        </div>
+
+        <!-- 內容 end -->
 
     </main>
 
