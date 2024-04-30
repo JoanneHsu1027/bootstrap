@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PTCG整合網</title>
+    <title>造型卡套 丹瑜＆烏栗 | PTCG整合網</title>
     <!-- bootstrap cdn css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- css外掛 -->
     <link rel="stylesheet" href="../css/styles.css">
-    <!-- font -->
 </head>
 
 <body class="d-flex flex-column h-100">
     <main class="flex-shrink-0" style="background-color: white;">
+
         <!-- navbar start -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
             <div class="container-fluid">
@@ -31,7 +31,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">首頁</a>
+                            <a class="nav-link" aria-current="page" href="../index.html">首頁</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./about.html">新手指南</a>
@@ -43,7 +43,7 @@
                             <a class="nav-link" href="./storelist.html">道館賽店家</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./product.html">卡牌相關產品</a>
+                            <a class="nav-link active" href="./product.html">卡牌相關產品</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./faq.html">常見問題</a>
@@ -139,102 +139,90 @@
         </div>
         <!-- 購物車 end -->
 
-        <!-- 最新資訊 start -->
-        <div id="carouselExampleIndicators" class="carousel slide mt-4 pt-4" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="../imgs/card240510.png" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="../imgs/pokemon_championships2023-24.png" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="../imgs/card240403.png" class="d-block w-100" alt="...">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-        <!-- 最新資訊 end -->
+        <!-- 麵包屑 start -->
+        <nav aria-label="breadcrumb" class="px-3 py-3 my-6 mx-4">
+            <ol class="breadcrumb  mb-0">
+                <li class="breadcrumb-item"><a href="./index.html">首頁</a></li>
+                <li class="breadcrumb-item"><a href="./product.html">卡牌相關產品</a></li>
+                <li class="breadcrumb-item active" aria-current="page">造型卡套 丹瑜＆烏栗</li>
 
-        <!-- 最新影片 start -->
-        <div class="py-5">
-            <div class="container">
-                <h2 class="text-center mt-4 mb-5">
-                    最新影片
-                </h2>
-                <div class="row">
-                    <div class="col-12 col-md-6">
-                        <div class="">
-                            <a href="./storelist.html">
-                                <img src="../imgs/storejpg.jpg" alt="" class="w-100">
-                            </a>
-                        </div>
-                        <p class="text-center pt-3">道館賽店家</p>
-                    </div>
-                    <div class="col-12 col-md-6">
-                        <div class="">
-                            <a href="./crtater.html">
-                                <img src="../imgs/storejpg.jpg" alt="" class="w-100">
-                            </a>
-                        </div>
-                        <p class="text-center pt-3">創作者資訊</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- 最新影片 end -->
+            </ol>
+        </nav>
+        <!-- 麵包屑 end -->
 
-        <!-- 最新賽事 start-->
-        <div class="py-5">
-            <div class="container-fluid px-8">
-                <div class="row mt-2 pt-2 mb-1 pb-1">
-                    <h2 class="text-center mt-4 mb-5">最新賽事</h2>
-                    <div class="col-12 col-xl-4 pb-5">
-                        <div class="position-relative">
-                            <img src="../imgs/CL.jpg" alt="" class="w-100 rounded">
-                            <div class="bg-icon text-white position-absolute start-0 bottom-0 p-2">台灣冠軍賽</div>
+        <!-- 內容 -->
+        <div class="container">
+            <div class="row">
+                <!-- 品名 start -->
+                <div class="col-12 mb-5">
+                    <h1>造型卡套 丹瑜＆烏栗</h1>
+                </div>
+                <!-- 品名 end -->
+            </div>
+            <div class="row">
+                <!-- 產品圖 start -->
+                <div class="col-12 col-xl-4">
+                    <div class="row mt-3">
+                        <div class="col-md-12">
+                            <img id="mainImage" src="../imgs/烏栗姊弟卡套-2.jpeg" alt="Main Image" class="img-fluid w-100">
                         </div>
                     </div>
-                    <div class="col-12 col-xl-4 pb-5">
-                        <div class="position-relative">
-                            <img src="../imgs/RL.jpg" alt="" class="w-100 rounded">
-                            <div class="bg-icon text-white position-absolute start-0 bottom-0 p-2">地區聯盟賽</div>
+                    <div class="row">
+                        <div class="col-md-3 mt-2 mb-3 py-1">
+                            <img class="thumbnail w-100" src="../imgs/烏栗姊弟卡套-2.jpeg" alt="Thumbnail 2"
+                                data-main-image="../imgs/烏栗姊弟卡套-2.jpeg">
                         </div>
-                    </div>
-                    <div class="col-12 col-xl-4 pb-5">
-                        <div class="position-relative">
-                            <img src="../imgs/TL.jpg" alt="" class="w-100 rounded">
-                            <div class="bg-icon text-white position-absolute start-0 bottom-0 p-2">城市聯盟賽</div>
+                        <div class="col-md-3 mt-2 mb-3 py-1">
+                            <img class="thumbnail w-100" src="../imgs/烏栗姊弟卡套.jpeg" alt="Thumbnail 1"
+                                data-main-image="../imgs/烏栗姊弟卡套.jpeg">
+                        </div>
+                        <div class="col-md-3 mt-2 mb-3 py-1">
+                            <img class="thumbnail w-100" src="../imgs/烏栗姊弟卡套-3.jpeg" alt="Thumbnail 2"
+                                data-main-image="../imgs/烏栗姊弟卡套-3.jpeg">
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <!-- 最新賽事 end-->
+                <!-- 產品圖 end -->
+                <!-- 產品內容 start -->
+                <div class="col-12 col-xl-8">
+                    <div class="row">
+                        <ul class="ms-3">
+                            <li class="my-4 fs-4 text-primary">造型卡套 丹瑜＆烏栗 登場!</li>
+                            <li class="my-4">為了保護卡片受到刮傷，這是一張一個放入的卡套！</li>
+                            <li class="my-4">備用的卡套有4張，每包裝裡有64張卡套，可放入一組60張卡的標準套牌！</li>
+                            <li class="my-4">※此商品每人限購5個。</li>
+                            <li class="my-4">查看其他商品<a href="./product.html"
+                                    class="text-decoration-none  text-danger">點此</a></li>
+                        </ul>
+                        <div class="mb-4">售價：NT 250</div>
+                        <div class="col-5">
+                            <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                <option selected disabled>請選擇數量</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">4</option>
+                            </select>
+                        </div>
+                        <div class="col-7">
+                            <button type="button" class="btn btn-primary me-4 ms-5">直接購買</button>
+                            <button type="button" class="btn btn-primary me-4">加入購物車</button>
+                            <button type="button" class="btn btn-primary me-3">進入收藏</button>
+                        </div>
+                    </div>
 
-        <!-- 底部點擊箭頭 -->
-        <div>
-            <a href="#" class="position-fixed end-0 bottom-0 fs-1 mx-2 my-5"><i
-                    class="bi bi-arrow-up-circle-fill"></i></a>
+                </div>
+            </div>
+
         </div>
-        <!-- 底部點擊箭頭 -->
+        </div>
+        </div>
+        </div>
+        <!-- 產品內容 end -->
+        </div>
+        </div>
+
     </main>
 
     <!-- footer -->
@@ -247,6 +235,15 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
         </script>
+    <!-- 圖片效果 js -->
+    <script>
+        document.querySelectorAll('.thumbnail').forEach(item => {
+            item.addEventListener('click', event => {
+                const mainImage = document.getElementById('mainImage');
+                mainImage.src = item.dataset.mainImage;
+            });
+        });
+    </script>
 </body>
 
 </html>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>創作者資訊 | PTCG整合網</title>
     <!-- bootstrap cdn css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
@@ -37,13 +37,13 @@
                             <a class="nav-link" href="./about.html">新手指南</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./crteater.html">創作者資訊</a>
+                            <a class="nav-link active" href="./crteater.html">創作者資訊</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./storelist.html">道館賽店家</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="./product.html">卡牌相關產品</a>
+                            <a class="nav-link" href="./product.html">卡牌相關產品</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./faq.html">常見問題</a>
@@ -52,12 +52,21 @@
                             <a class="nav-link" href="./contact.html">聯絡我們</a>
                         </li>
                     </ul>
-                    <form class="d-flex">
-                        <a href="javascript:;" class="fs-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <div class="d-flex">
+                        <a href="javascript:;" class="fs-2 mx-2 my-2" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
                             <i class="bi bi-person-fill" style="color: white;"></i>
                         </a>
-
-                    </form>
+                        <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                            aria-controls="offcanvasExample" class="fs-2 position-relative mx-2 my-2">
+                            <i class="bi bi-cart-fill" style="color: white;"></i>
+                            <span
+                                class="fs-6 position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">
+                                0
+                                <span class="visually-hidden">unread messages</span>
+                            </span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -112,18 +121,46 @@
         </div>
         <!-- modal end -->
 
+        <!-- 購物車 start -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel"> </h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div>
+                    您的購物車是空的
+                    <p>共 0 筆商品</p>
+                </div>
+                <a href="./cart.html" class="btn btn-primary">前往購物車</a>
+            </div>
+        </div>
+        <!-- 購物車 end -->
+
         <!-- 麵包屑 start -->
         <nav aria-label="breadcrumb" class="px-3 py-3 my-6 mx-4">
             <ol class="breadcrumb  mb-0">
                 <li class="breadcrumb-item"><a href="./index.html">首頁</a></li>
-                <li class="breadcrumb-item active"><a href="./product.html">卡牌相關產品</a></li>
-                <li class="breadcrumb-item active" aria-current="page">產品頁</li>
-
+                <li class="breadcrumb-item active" aria-current="page">創作者資訊</li>
             </ol>
         </nav>
         <!-- 麵包屑 end -->
 
+        <!-- 大標 start -->
+        <div class="container">
+            <h2 class="col-12 text-center mb-5">創作者資訊</h2>
+        </div>
+        <!-- 大標 end -->
 
+
+        <!-- 底部點擊箭頭 -->
+        <div>
+            <a href="#" class="position-fixed end-0 bottom-0 fs-1 mx-2 my-5"><i
+                    class="bi bi-arrow-up-circle-fill"></i></a>
+        </div>
+        <!-- 底部點擊箭頭 -->
     </main>
 
     <!-- footer -->
